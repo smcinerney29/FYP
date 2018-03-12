@@ -23,3 +23,18 @@ plot(k,a);
 plot(a,p)
 
 plot nullclines http://www.math.pitt.edu/~bard/classes/3380/pplect.pdf
+
+la=0.25;
+a1=0.6;
+a2=0.48;
+To=288;
+Tstar=283;
+deltaT=13;
+q=1.3;
+v=3*10^11;
+a=.121:.01:.6;
+p=(v*atanh((-2*a+2*a1-a2)/a2)-q*(1-a)-((To-Tstar)/deltaT)+1)/(la*v);
+
+
+atanh((-2*a+2*a1-a2)/a2)
+plot(p,a)
